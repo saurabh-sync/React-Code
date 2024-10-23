@@ -5,11 +5,12 @@ import "./App.css";
 
 const App = () => {
   const searchRef = useRef("");
-  const [, forceUpdate] = useState();
+  // const [, forceUpdate] = useState();
 
   const handleSearchChange = (value) => {
     searchRef.current = value; // Update the current ref value
-    forceUpdate({});
+    console.log(searchRef.current);
+    // forceUpdate({});
   };
 
   return (

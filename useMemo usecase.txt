@@ -1,3 +1,6 @@
+useMemo usecase
+useRef pass from main header to other child components
+
 import React, { useState, useMemo } from "react";
 
 const sampleUsers = [

@@ -13,6 +13,7 @@ const Header2 = () => {
 
   useEffect(() => {
     setInputValue(searchRef.current);
+    console.log(searchRef.current);
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchRef.current]);
 

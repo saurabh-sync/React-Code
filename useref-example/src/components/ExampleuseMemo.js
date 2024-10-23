@@ -13,12 +13,14 @@ const UserManagement = () => {
   const [sortOrder, setSortOrder] = useState("asc");
 
   const filteredUsers = useMemo(() => {
+    console.log("Filtered users function");
     return sampleUsers.filter((user) =>
       user.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }, [searchTerm]);
 
   const sortedUsers = useMemo(() => {
+    console.log("Sorted users function");
     return [...filteredUsers].sort((a, b) => {
       return sortOrder === "asc" ? a.age - b.age : b.age - a.age;
     });
